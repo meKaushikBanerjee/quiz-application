@@ -1,9 +1,9 @@
 <?php 
 // DB credentials.
-define('DB_HOST','localhost');
-define('DB_USER','root');
-define('DB_PASS','');
-define('DB_NAME','quiz');
+define('DB_HOST','remotemysql.com');
+define('DB_USER','LI2j15laom');
+define('DB_PASS','rroRX2A03j');
+define('DB_NAME','LI2j15laom');
 // Establish database connection.
 try
 {
