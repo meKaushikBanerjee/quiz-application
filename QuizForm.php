@@ -1,17 +1,7 @@
 <?php 
 // starting the session
 session_start();
-$_SESSION['quizid']="Q_2";
-/*if(isset($_GET['quiz']))
-{
-    $_SESSION['quizid']=strtoupper($_GET['quiz']);
-}
-/*else
-{
-    echo "<script>alert('Kindly enter the Quiz link correctly!');</script>";
-    echo '<script>window.location.replace("10.129.7.157/sailquiz")</script>';
-}*/
-
+$_SESSION['quizid']="Q_3";
 ?>
 
 <!DOCTYPE html>
@@ -77,9 +67,6 @@ $_SESSION['quizid']="Q_2";
             }
         }
     </style>
-
-    <div class="col-lg-12 no-gutters"><img src="Images/Steel_Authority_of_India_logo.svg.png" class="mx-auto d-block img-fluid logo" alt="sail-logo"></div>
-
     <div class="container">
         
         <form class="form-horizontal center" action="UserFormAction.php" method="POST">
@@ -97,16 +84,16 @@ $_SESSION['quizid']="Q_2";
 
                 <div class="form-group">
                     <div class="row">
-                        <label class="control-label col-sm-5" for="qno">Enter P No:<span class="required">*</span></label>
+                        <label class="control-label col-sm-5" for="qno">Enter Mobile Number:<span class="required">*</span></label>
                         <div class="col-sm-5">
-                            <input type="text" class="form-control" id="upno" placeholder="Enter P No" name="upno" required maxlength="7">
+                            <input type="text" class="form-control" id="upno" placeholder="Enter P No" name="upno" required maxlength="10">
                         </div>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <div class="row">
-                        <label class="control-label col-sm-5" for="qno">Location/Place of posting (For Calcutta Branch BSO Cal may be written):<span class="required">*</span></label>
+                        <label class="control-label col-sm-5" for="qno">City:<span class="required">*</span></label>
                         <div class="col-sm-5">
                             <input type="text" class="form-control" id="uloc" placeholder="Enter your Location/ Place of posting" name="uloc" required>
                         </div>
@@ -115,15 +102,12 @@ $_SESSION['quizid']="Q_2";
 
                 <div class="form-group">
                     <div class="row">
-                        <label class="control-label col-sm-5" for="grp">You Belong to Group :</label>
+                        <label class="control-label col-sm-5" for="grp">Nationality:</label>
                         <div class="col-sm-7">
                             <select name="ugrp" id="ugrp" required>
-                                <option value="">Select your group</option>
-                                <option value="NR">NR, BSOs, CCOs, Warehouses, CD & ITD</option>
-                                <option value="WR">WR, BSOs, CCOs, Warehouses, SRM Bhilai</option>
-                                <option value="ER">ER, BSOs, CCOs, SRM Bokaro, Rourkela, Durgapur, ISP, ASP, BTSO Kolkata, Haldia, T&S Regional Office, Kolkata</option>
-                                <option value="SR">SR, BSOs,CCOs, Warehouses,SRM Salem ,SRM Bhadravati, BTSO Vizag, Paradip and T&S Regional Office, Vizag</option>
-                                <option value="HQ">All Departments of Ispat Bhawan, HQ Kolkata including T&S </option>
+                                <option value="">Select your nationality</option>
+                                <option value="IN">Indian</option>
+                                <option value="OT">Others</option>
                             </select>
                         </div>
                     </div>
@@ -143,7 +127,7 @@ $_SESSION['quizid']="Q_2";
     </div>
 
     <footer id="footer">
-        <p>Maintained by: ERP | SAILCMO</p>
+        <p>Designed by: Kaushik Banerjee</p>
     </footer>
 
 </body>
