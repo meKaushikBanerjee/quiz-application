@@ -1,0 +1,2 @@
+# quiz-application
+Online quiz system built on PHP, JavaScript, HTML5 and CSS3. It has inbuilt Timer support along with Admin Panel. One question is displayed at a time and there is a time limit for each question. Also there is a final fixed timer given where you can solve the unattended questions separately. On the admin side the quiz can be set for a particular date and time when this quiz will be active. There s a reports section where the admin can check the reports of any particular quiz. 
