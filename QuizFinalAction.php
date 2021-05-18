@@ -67,7 +67,7 @@ if(isset($_POST['submit']))
 	$udate = array_map('intval',explode('-',$udate,3));
 	$udate = $udate[0].$udate[1].$udate[2];
 
-	if(($time>=$qstime)&&($udate==$date)&&($time<=$qetime))
+	if(($time>=$qstime)&&($time<=$qetime))
 	{
 		$dura=$totdura;
 		$stime=$_POST['timer'];
