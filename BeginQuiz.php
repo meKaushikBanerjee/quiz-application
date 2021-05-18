@@ -67,7 +67,6 @@ session_start();
         });
         
     </script>
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
     <title>QUIZ</title>
 
 </head>
@@ -90,9 +89,6 @@ session_start();
             }
         }
     </style>
-
-    <div class="col-lg-12 no-gutters"><img src="Images/Steel_Authority_of_India_logo.svg.png" class="mx-auto d-block img-fluid logo" alt="sail-logo"></div>
-
     <div class="container"> 
         <div class="form-horizontal center"> 
             <div class="form-group">
@@ -117,7 +113,7 @@ session_start();
     </div>
 
     <footer id="footer">
-        <p>Maintained by: ERP | SAILCMO</p>
+        <p>Designed By Kaushik Banerjee</p>
     </footer>
 
 </body>
