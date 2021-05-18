@@ -154,14 +154,13 @@ if($query->execute())
                  -webkit-text-stroke: 1px black;
                }
             </style>
-            <div class="col-lg-12 no-gutters"><img src="Images/Steel_Authority_of_India_logo.svg.png" class="mx-auto d-block img-fluid logo" alt="sail-logo"></div>
             <div class="col-lg-12 no-gutters" style="text-align: center;"><?php echo $u_name; ?></div>
             <div class="container">
                <p style="color: green; font-size: 40px; font-weight: bold; text-align: center;" class="stroke">Congratulations! You have successfully submitted your quiz.</p>
                <p style="color: red; font-size: 40px; font-weight: bold; text-align: center;" class="stroke">Now you can close the window.</p>
             </div>
             <footer id="footer">
-               <p>Maintained by: ERP | SAILCMO</p>
+               <p>Designed By Kaushik Banerjee</p>
             </footer>
          </body>
       </html>
