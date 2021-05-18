@@ -35,21 +35,6 @@ else
 
 if (isset($_POST['submit']))
 {
-	/*if(isset($_SESSION['quizid']))
-	{
-		$qid=strtoupper($_SESSION['quizid']);
-	}*/
-
-	/*$sql="SELECT * from quizmaster where QUIZ_ID='$qid'";
-	$query = $dbh->prepare($sql);
-	$query->execute();
-	$results=$query->fetchAll(PDO::FETCH_OBJ);
-	if($query->rowCount() == 0)
-	{
-		echo "<script>alert('There is no such Quiz yet!');</script>";
-		echo '<script>window.location.replace("//10.129.20.223")</script>';
-	}*/
-
 	// insert form values in variables
 	$qid=strtoupper($_SESSION['quizid']);
 	$uname=strtoupper($_POST['uname']);
@@ -181,13 +166,13 @@ if (isset($_POST['submit']))
 		else
 		{	
 			echo "<script>alert('You have already successfully completed your quiz. Thank You!');</script>";
-			echo '<script>window.location.replace("//10.129.20.223")</script>';
+			echo '<script>window.location.replace("https://quizmodule.herokuapp.com/")</script>';
 		}
 	}
 	else
 	{
 		echo "<script>alert('Either the Quiz has not started yet or it has ended. Please contact your Quiz Administrator.');</script>";
-		echo '<script>window.location.replace("//10.129.20.223")</script>';
+		echo '<script>window.location.replace("https://quizmodule.herokuapp.com/")</script>';
 	}
 }
 
