@@ -64,7 +64,7 @@ $qetime = $qehours.$qeminutes."00";
 $udate = array_map('intval',explode('-',$udate,3));
 $udate = $udate[0].$udate[1].$udate[2];
 
-if(($time>=$qstime)&&($udate==$date)&&($time<=$qetime))
+if(($time>=$qstime)&&($time<=$qetime))
 { 
     $qetime = strtotime($qetime);
     $time = strtotime($time);
@@ -199,8 +199,6 @@ if(($time>=$qstime)&&($udate==$date)&&($time<=$qetime))
                     -webkit-text-stroke: 1px black;
                 }
             </style>
-
-            <div class="col-lg-12 no-gutters"><img src="Images/Steel_Authority_of_India_logo.svg.png" class="mx-auto d-block img-fluid logo" alt="sail-logo"></div>
             <div class="col-lg-12 no-gutters" style="text-align: center;"><?php echo $u_name; ?></div>
 
             <div class="container">
@@ -333,7 +331,7 @@ if(($time>=$qstime)&&($udate==$date)&&($time<=$qetime))
 
             <footer id="footer">
 
-                <p>Maintained by: ERP | SAILCMO</p>
+                <p>Designed By Kaushik Banerjee</p>
 
             </footer>
 
