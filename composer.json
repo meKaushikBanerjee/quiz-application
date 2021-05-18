@@ -1,0 +1,29 @@
+{
+    "require": {
+        "php": ">=5.3.0",
+        "silex/silex": "~1.0@dev",
+        "chh/cache-service-provider": "~1.0",
+        "ext-libevent": "*",
+        "ext-curl": "*",
+        "ext-sundown": "*"
+    },
+    "extra": {
+        "heroku": {
+            "document-root": "web",
+            "index-document": "index.php",
+            "php-config": [
+                "short_open_tag=on",
+                "date.timezone=Europe/Vienna",
+                "newrelic.appname=php-test"
+            ],
+            "engines": {
+                "php": "5.5.*",
+                "nginx": "1.4.*"
+            },
+            "compile": [
+                "echo $FOO"
+            ],
+            "newrelic": true
+        }
+    }
+}
